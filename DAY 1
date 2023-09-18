@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int X,Y,i=0;
+    cout<<"enter the no.of day :";
+    cin>>X;
+    
+    while(i<X){
+        
+    cout<<"enter the water drank by chef:";
+    cin>>Y;
+    if(Y>=2000){
+        cout<<"yes\n";
+    }
+    else{
+        cout<<"no\n";
+    }
+    i++;
+}
+	return 0;
+}
