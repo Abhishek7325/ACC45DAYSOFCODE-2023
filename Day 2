@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int x,y,z,p,t,i=0;
+cout<<"enter the no. of test cases that chef wants to test:";
+cin>>t;
+while(i<t){
+   
+    cout<<"enter the no.of 5rupees coin:\n"<<"enter the no.of 10rupees coin:\n"<<"enter the cost of choclate:\n";
+    cin>>x;
+    cin>>y;
+    cin>>z;
+    p=((x*5+y*10)/z);
+    cout<<"maximum no.of choclate chef can buy:"<<p<<"\n";
+    i++;
+}
+
+	return 0;
+}
