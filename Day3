@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main(){
+int T,X,Y;
+cout<<"enter the no.of test cases:";
+cin>>T;
+while(T--){
+cout<<"enter the no.of student in the class:";
+cin>>X;
+cout<<"enter the no.of chairs already in the class:";
+cin>>Y;
+if(X>=Y){
+    cout<<"no.of chairs required:"<<X-Y<<endl;
+
+}
+else if(X<Y){
+    cout<<"no.of chairs required:"<<0<<endl;
+}
+else{
+    cout<<"no.of chairs required:"<<0<<endl;
+}
+}
+    return 0;
+}
