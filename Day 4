@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+int T,X,Y;
+cout<<"enter the no.of test cases:";
+cin>>T;
+while(T--){
+cout<<"enter the daily goal of Chef:";
+cin>>X;
+cout<<"enter the number of chocolates he actually sells.:";
+cin>>Y;
+if(X>=Y){
+    cout<<" total amount he made:"<<Y*1<<endl;
+
+}
+
+else{
+    cout<<" total amount he made:"<<X+2*(Y-X)<<endl;
+}
+}
+    return 0;
+}
