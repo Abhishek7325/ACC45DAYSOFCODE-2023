@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+int T;
+string N;
+cin>>T;
+while(T--){
+int D,count=0;
+cin>>D;
+cin>>N;
+for(int i=0;i<D;i++){
+if(N[i]=='0'||N[i]=='5'){
+    cout<<"\nyes"<<endl;
+    count=1;
+    break;
+}
+}
+if(count==0){
+cout<<"\nno"<<endl;
+}
+    }
+	return 0;
+}
