@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int T,p1,p2,p3;
+cin>>T;
+while(T--){
+    cin>>p1;
+     cin>>p2;
+      cin>>p3;
+      if( (p1+p3)>p2){
+          cout<<(p1+p3)<<endl;
+      }
+      else{
+          cout<<p2<<endl;
+      }
+}
+	return 0;
+}
