@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int T,X,Y;
+	cin>>T;
+	while(T--){
+	    cin>>X;
+	    cin>>Y;
+	    if((2*Y)>X){
+	        cout<<0<<endl;
+	    }
+	    else{
+	        cout<<X/(2*Y)<<endl;
+	    }
+	   
+	}
+	return 0;
+}
