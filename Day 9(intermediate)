@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int T,a,b,c,d,e,P;
+cin>>T;
+while(T--){
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    cin>>d;
+    cin>>e;
+    cin>>P;
+         if((a+b+c+d+e)*P<=120){
+             cout<<"No"<<endl;
+         }
+         else{
+             cout<<"Yes"<<endl;
+}
+}
+	return 0;
+}
