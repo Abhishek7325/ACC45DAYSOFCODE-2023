@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+int T,N,M;
+cin>>T;
+while(T--){
+cin>>N;
+cin>>M;
+if(N<=(M*6*6)){
+  cout<<"YES"<<endl;
+}
+else{
+  cout<<"NO"<<endl;
+}
+   
+}
+
+	return 0;
+}
