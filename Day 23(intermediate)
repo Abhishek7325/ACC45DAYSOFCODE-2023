@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin>>N;
+    while(N--){
+        int a1,a2,a3,a4,a5;
+        cin>>a1>>a2>>a3>>a4>>a5;
+        
+    switch(a1+a2+a3+a4+a5)
+    {
+        case 0: cout<<"Beginner"<<endl;
+        break;
+        case 1: cout<<"Junior Developer"<<endl;
+        break;
+        case 2: cout<<"Middle Developer"<<endl;
+        break;
+        case 3: cout<<"Senior Developer"<<endl;
+        break;
+        case 4: cout<<"Hacker"<<endl;
+        break;
+        case 5: cout<<"Jeff Dean"<<endl;
+        break;
+        
+     }
+}    
+	return 0;
+}
