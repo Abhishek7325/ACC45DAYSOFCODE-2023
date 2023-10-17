@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int C,X,Y;
+	    cin>>C>>X>>Y;
+	    if(X>=C){
+	        cout<<0<<endl;
+	    }
+	    else{
+	        cout<<(C-X)*Y<<endl;
+	    }
+	}
+	return 0;
+}
