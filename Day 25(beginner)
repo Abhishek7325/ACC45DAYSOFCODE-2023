@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin>>N;
+    while(N--){
+        int N,X,Y;
+        cin>>N>>X>>Y;
+        if(Y%X==0){
+          if((Y/X)<=N){
+            cout<<"YES"<<endl;
+          }
+          else{
+            cout<<"NO"<<endl;
+          }
+        }
+        else{
+          cout<<"NO"<<endl;
+        }
+    }    
+	return 0;
+}
+
+
+
