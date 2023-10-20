@@ -1,0 +1,26 @@
+#include <iostream> 
+#include <string.h>
+using namespace std;
+int main() {
+    int T;
+    cin>>T;
+    while(T--){
+		int N,count=0;
+		cin>>N;
+		string B;
+    cin>> B;	
+		for(int i=0;i<N;i++){
+			if(B[i]=='1'){
+				count++;
+			}
+		}
+		float x=((float)(count+(120-N))/120)*100;
+		if(x>=75){
+			cout<<"YES"<<endl;
+		}
+		else{
+			cout<<"NO"<<endl;
+		}
+	}
+	return 0;
+}
