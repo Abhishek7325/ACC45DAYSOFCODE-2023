@@ -1,0 +1,33 @@
+#include <iostream> 
+using namespace std;
+int main() {
+    int T;
+    cin>>T;
+    while(T--){
+		int A,B,X,Y;
+		cin>>A>>B>>X>>Y;
+		if(A==B){
+			cout<<"YES"<<endl;
+		}
+		else{
+			if(A<B){
+				if((A+X)>=B){
+					cout<<"YES"<<endl;
+				}
+				else{
+					cout<<"NO"<<endl;
+				}
+			}
+			else{
+				if((A-Y)<=B){
+					cout<<"YES"<<endl;
+				}
+				else{
+					cout<<"NO"<<endl;
+				}
+			}
+		}
+	}
+	return 0;
+}
+
