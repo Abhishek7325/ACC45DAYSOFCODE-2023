@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int T;
+    cin>>T;
+    while(T--){
+		    int L,R,M;
+        cin>>L>>R>>M;
+        if(M%L!=0){
+            cout<<((M/L)+(M/R))+1<<endl;
+        } 
+        else{
+            cout<<((M/L)+(M/R))<<endl;
+        }
+    }
+	return 0;
+}
