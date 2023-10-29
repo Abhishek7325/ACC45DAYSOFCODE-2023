@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int P,Q;
+	    cin>>P>>Q;
+            int X=P+Q;
+            if(X%4==0||X%4==1){
+                cout<<"ALICE"<<endl;
+            }
+            else if(X%4==2||X%4==3){
+                cout<<"BOB"<<endl;
+            }
+	}
+	return 0;
+}
