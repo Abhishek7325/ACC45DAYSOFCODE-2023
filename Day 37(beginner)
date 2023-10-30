@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int T;
+    cin>>T;
+    while(T--){
+       float N,M,X;
+       cin>>N>>M;
+       X=N-(N/10);
+       if(X==M){
+            cout<<"EITHER"<<endl;
+       }
+       else if(X>M){
+            cout<<"DINING"<<endl;
+       }
+       else{
+            cout<<"ONLINE"<<endl;
+       }
+    }
+    return 0; 
+}
