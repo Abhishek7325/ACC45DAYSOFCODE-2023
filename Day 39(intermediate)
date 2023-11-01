@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int T;
+  cin >> T;
+  while (T--)
+  {
+    int N;
+    cin >> N;
+    int P[N], S[N],maximum,sum=0;
+    for (int i = 0; i < N; i++)
+    {
+      cin >> P[i];
+      cin >> S[i];
+      if (P[i] > 8)
+      {
+        S[i] = 0;
+      }
+    }
+    for (int i = 0; i < N; i++)
+    {
+      for (int j = i + 1; j < N; j++)
+      {
+        if (P[i] == P[j])
+        {
+          maximum = max(S[i], S[j]);
+          S[i] = maximum;
+          S[j] = 0;
+        }
+      }
+      sum += S[i];
+    }
+    cout<<sum<<endl;
+  }
+  return 0;
+}
