@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int X,Y,D;
+	    cin>>X>>Y>>D;
+	    if(X-Y<0){
+	        if(-1*(X-Y)<=D){
+	            cout<<"YES"<<endl;
+	        }
+	        else{
+	            cout<<"NO"<<endl;
+	        }
+	    }
+	    else{
+	        if(X-Y<=D){
+	            cout<<"YES"<<endl;
+	        }
+	        else{
+	            cout<<"NO"<<endl;
+	        }
+	    }
+	}
+	return 0;
+}
