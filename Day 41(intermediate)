@@ -1,0 +1,26 @@
+#include <iostream>
+#define ll long long 
+using namespace std;
+int main() {
+	// your code goes here
+	int T;
+	cin>>T;
+	while(T--){
+	    ll int N,sum1=0,sum2=0;
+		  cin>>N;
+	    ll int S[N];
+		  for(ll int i=0;i<N;i++){
+			    cin>>S[i];
+		  }
+	    for(ll int i=0;i<N-1;i++){
+	          if(S[i]<S[i+1]){
+	               sum1+=(S[i+1]-S[i])-1;
+	         }
+	         else{
+	               sum2+=(S[i]-S[i+1])-1;
+	        }
+	   }
+	   cout<<sum1+sum2<<endl;
+	}
+	return 0;
+}
