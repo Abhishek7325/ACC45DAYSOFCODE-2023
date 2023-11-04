@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int max_T,max_N,sum_N;
+	    cin>>max_T>>max_N>>sum_N;
+	    int X=sum_N%max_N;
+	    if((sum_N/max_N)<max_T){
+	        cout<<(sum_N/max_N)*(max_N*max_N)+X*X<<endl;
+	    }
+	    else{
+	        cout<<(max_T)*(max_N*max_N)<<endl;
+	    }
+	}
+	return 0;
+}
